@@ -10,16 +10,16 @@ myip = os.system("myip")
 client = boto3.client('route53')
 
 response = client.change_resource_record_sets(
-    HostedZoneId='Z1E5QYKGMFGDPA',
+    HostedZoneId='lkmnlkmlmlml',
     ChangeBatch={
     "Comment": "Update record to reflect new IP address of home router",
     "Changes": [
         {
             "Action": "UPSERT",
             "ResourceRecordSet": {
-                "Name": "xinux.anandbr.com.",
+                "Name": "openshift.truetech.solutions",
                 "Type": "A",
-                "TTL": 300,
+                "TTL": 60,
                 "ResourceRecords": [
                     {
                         "Value": "110.110.110.10"
