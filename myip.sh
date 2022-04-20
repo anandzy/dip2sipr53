@@ -1,1 +1,1 @@
-curl -s ipinfo.io | jq | grep -E -o '([0-9]{1,3}\.){3}[0-9]{1,3}'
+curl -s ipinfo.io | jq | grep -E -o '([0-9]{1,3}\.){3}[0-9]{1,3}' | head -n 1
