@@ -17,7 +17,7 @@ response = client.change_resource_record_sets(
         {
             "Action": "UPSERT",
             "ResourceRecordSet": {
-                "Name": "openshift.truetech.solutions",
+                "Name": "mk.truetech.solutions",
                 "Type": "A",
                 "TTL": 60,
                 "ResourceRecords": [
