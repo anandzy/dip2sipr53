@@ -17,12 +17,12 @@ response = client.change_resource_record_sets(
         {
             "Action": "UPSERT",
             "ResourceRecordSet": {
-                "Name": "mk.truetech.solutions",
+                "Name": "hetzner.anandbr.com",
                 "Type": "A",
                 "TTL": 60,
                 "ResourceRecords": [
                     {
-                        "Value": "95.216.245.188"
+                        "Value": "95.217.88.224"
                     }
                 ]
             }
