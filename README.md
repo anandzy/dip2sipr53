@@ -1,12 +1,12 @@
 # Static IP to Dynamic IP 
 
 ### Introduction
-- This is a simple collection of script to convert a static IP to dynamic IP. This script is applicable for all Linux distributions with Public IP assigned by ISP. This script is tested on Ubuntu 22.04 LTS.
+- This is a simple collection of script to convert a dynamic IP to update inself with changes automatically to the AWS r53 A records. This script is applicable for all Linux distributions with Public IP assigned by ISP. This script is tested on Ubuntu 22.04 LTS.
 </br>
 
 </br>
 
-### I used this script to convert my static IP to dynamic IP, where I want to access from the internet.
+### I used this script to update my dynamic IP, where I want to access my home server from the internet.
 </br>
 
 </br>
@@ -23,4 +23,4 @@
 </br>
 
 ### How it works
-- fetches the public IP and same is recorded in the aws r53 template,  with aws creadentials which have role allowed to update the A records in the specified domain will be updated by aws cli command.
+- fetches the public IP and update same is recorded in the aws r53 template,  with aws creadentials which have role allowed to update the A records in the specified domain will be updated by aws cli command.
