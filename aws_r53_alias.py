@@ -10,19 +10,19 @@ myip = os.system("myip")
 client = boto3.client('route53')
 
 response = client.change_resource_record_sets(
-    HostedZoneId='Z1E5QYKGMFGDPA',
+    HostedZoneId='',
     ChangeBatch={
     "Comment": "Update record to reflect new IP address of home router",
     "Changes": [
         {
             "Action": "UPSERT",
             "ResourceRecordSet": {
-                "Name": "hetzner.anandbr.com",
+                "Name": "",
                 "Type": "A",
                 "TTL": 60,
                 "ResourceRecords": [
                     {
-                        "Value": "95.217.88.000"
+                        "Value": ""
                     }
                 ]
             }
